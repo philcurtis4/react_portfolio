@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 
 * {
@@ -53,11 +54,18 @@ header{
 	background: rgb(11, 16, 63);
 	color: #eee;
 	margin-bottom: 15px;
+	h3 {
+		font-family: "Permanent Marker", cursive ;
+	}
 	nav{
 		a{
 			margin-left: 10px;
 			color: #eee;
+			&.active, a:hover  {
+				text-decoration: underline;
+			}
 		}
+		
 		
 	}
 }
@@ -67,19 +75,29 @@ main {
 }
 
 footer {
-	padding: 10px 2%;
+	margin-top: 5px;
+	background: #666;
+	color: #eee;
+	padding: 20px 2%;
+	a {
+		margin-right: 1rem;
+		color: #eee;
+	}
 }
 
-//Home Styles
+//About Styles
+.about-title{
+	margin-bottom: 20px
+}
 
 .hero{
-	margin-right: 10%;
-	width: 40%;
+	margin-right: 5%;
+	width: 38%;
 	border-radius: 35px;;
 }
 
 .home-words {
-	margin: 0 auto;
+	margin: 0 5% 0 2%;
 
 	h3{
 		font-size: 4rem;
@@ -88,6 +106,35 @@ footer {
 	p{
 		font-size: 1.5rem;
 	}
+	p.intro {
+		font-size: 1.2rem;
+	}
+}
+
+//Projects Styles
+
+.work {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	
+	gap: 15px;
+	color: #fff;
+	margin: 35px 0;
+	
+
+	.work-item {
+		color:#fff;
+		padding: 15px;
+		background-size: cover;
+		height: 10rem;
+		p {
+			margin: 8px 0;
+		}
+		&:hover {
+			opacity: .7;
+		}
+	}
+	
 }
 
 //Contact form styles
@@ -116,7 +163,7 @@ footer {
 .form-group-container {
   display: grid;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 1.8rem;
 }
 
 .form-group {
@@ -162,5 +209,10 @@ footer {
   color: #fff;
   padding: 13px 5px;
   border-radius: 0.375rem;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
+}
+
+//Resume Downloads
+.download {
+	margin-top: 8rem;
 }

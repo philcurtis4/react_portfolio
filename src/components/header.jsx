@@ -4,12 +4,14 @@ function Header () {
 	return (
 		<>
 			<header className="row justify-between">
-				<h3>Logo</h3>
+				<h3>Phil Curtis</h3>
 
 				<nav>
-					<NavLink to="/">Home</NavLink>
-					<NavLink to="/about">About</NavLink>
+					
+					<NavLink to="/">About Me</NavLink>
+					<NavLink to="/portfolio">Portfolio</NavLink>
 					<NavLink to="/contact">Contact</NavLink>
+					<NavLink to="/resume">Resume</NavLink>
 				</nav>
 			</header>
 		</>
